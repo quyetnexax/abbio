@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABBIO - Engineering Intelligence for the World</title>
+    
+    <!-- GitHub Pages SPA redirect script -->
+    <script>
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <meta name="description" content="ABBIO builds mobile and AI products that scale globally. Data-driven, design-led, results-focused." />
+    <meta name="author" content="ABBIO" />
+    <link rel="canonical" href="https://abbio.info" />
+
+    <meta property="og:title" content="ABBIO - Engineering Intelligence for the World" />
+    <meta property="og:description" content="We build mobile and AI products that scale globally. Data-driven, design-led, results-focused." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ABBIO" />
+    <meta name="twitter:title" content="ABBIO - Engineering Intelligence for the World" />
+    <meta name="twitter:description" content="We build mobile and AI products that scale globally. Data-driven, design-led, results-focused." />
+    <!-- <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" /> -->
+  </head>
+
+  <body>
+    <div id="root">
+      <div style="padding: 20px; font-family: sans-serif;">
+        <h1>Loading...</h1>
+        <p>If you see this message for more than a few seconds, please check the browser console for errors.</p>
+      </div>
+    </div>
+    <script>
+      window.addEventListener('error', function(e) {
+        console.error('Global error:', e.error);
+      });
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
